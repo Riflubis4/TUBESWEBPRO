@@ -1,0 +1,214 @@
+/* General Styles */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #9f9fe5;
+    padding: 1rem;
+}
+
+.navbar-brand {
+    color: white !important;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+/* Management Card */
+.management-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.btn-manage {
+    background-color: #9f9fe5;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+}
+
+.status-pending {
+    color: #ffa500;
+    font-weight: bold;
+}
+
+.status-completed {
+    color: #008000;
+    font-weight: bold;
+}
+
+/* Footer */
+.footer {
+    background-color: #6495ED;
+    color: white;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+/* Table Responsive */
+.table-responsive {
+    margin-top: 20px;
+}
+
+/* Main Navbar */
+.navbar {
+    background-color: #999AE6;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.navbar h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Navbar Links */
+.navbar-links a {
+    background-color: #1868b438;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.navbar-links a:hover {
+    background-color: #5c306e9e;
+}
+
+/* Main Content */
+.main-content {
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Categories Buttons Container */
+.categories-btn-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.categories-btn-container button {
+    background-color: #9596e0;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s;
+    width: 200px;
+    text-align: center;
+}
+
+.categories-btn-container button:hover {
+    background-color: #9b59b6;
+}
+
+/* Stats Cards */
+.stats-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    width: 30%;
+}
+
+.card h4 {
+    font-size: 22px;
+    color: #4A90E2;
+}
+
+.card p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Footer - Fixed Bottom */
+.footer {
+    background-color: #999AE6;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Custom Button */
+.btn-custom a {
+    color: white;
+    text-decoration: none;
+}
+
+.btn-custom a:hover {
+    color: yellow;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .categories-btn-container button {
+        width: 100%;
+    }
+
+    .stats-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .btn-custom a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .btn-custom a:hover {
+        color: #9596e0;
+    }
+}
