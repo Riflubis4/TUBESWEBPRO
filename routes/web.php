@@ -77,6 +77,7 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::get('/workshopAcademic', [WorkshopController::class, 'showAcademicWorkshop'])->name('workshop.academic');
+Route::get('/competitions/non-academic', [CompetitionController::class, 'showNonAcademicCompetitions'])->name('competition.nonAcademic');
 
 Route::middleware('auth')->group(function () {
    Route::get('/workshop/{id}', [WorkshopController::class, 'show'])->name('workshop.show');
